@@ -3,3 +3,7 @@ body{
     background-color: aqua;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.heading{
+    color:chartreuse;
+}
