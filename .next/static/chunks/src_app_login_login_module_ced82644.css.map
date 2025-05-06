@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///home/vick/Documents/Projects/lozi/src/app/login/login.module.css"],"sourcesContent":["body{\n    background-color: aqua;\n}"],"names":[],"mappings":"AAAA","debugId":null}}]
+}
