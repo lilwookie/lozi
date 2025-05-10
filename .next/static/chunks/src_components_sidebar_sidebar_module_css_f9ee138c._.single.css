@@ -1,0 +1,58 @@
+/* [project]/src/components/sidebar/sidebar.module.css [app-client] (css) */
+.sidebar-module__4Oz74W__sidebar {
+  color: #fff;
+  background-color: #1a1a2e;
+  height: 100vh;
+  padding: 20px 10px;
+  transition: width .3s;
+  overflow-y: auto;
+}
+
+.sidebar-module__4Oz74W__sidebarTitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar-module__4Oz74W__navList {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__navLink {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__navLinkActive {
+  color: #0eb6ad;
+  background-color: #fff;
+}
+
+.sidebar-module__4Oz74W__subLinks {
+  padding-left: 10px;
+}
+
+.sidebar-module__4Oz74W__subLink {
+  color: #fff;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__subLinkActive {
+  color: #0eb6ad;
+}
+
+/*# sourceMappingURL=src_components_sidebar_sidebar_module_css_f9ee138c._.single.css.map*/

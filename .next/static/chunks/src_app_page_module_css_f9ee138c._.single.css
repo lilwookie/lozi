@@ -1,0 +1,22 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__page {
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.page-module___8aEwW__main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.page-module___8aEwW__footer {
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: .9rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_page_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,122 @@
+/* [project]/src/components/navbar/navbar.module.css [app-client] (css) */
+.navbar-module__6qiM_q__nav {
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6.5rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-module__6qiM_q__logo {
+  color: #fff;
+  font-optical-sizing: auto;
+  font-family: Maven Pro, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.navbar-module__6qiM_q__links {
+  gap: 1.5rem;
+  display: flex;
+}
+
+.navbar-module__6qiM_q__link {
+  color: #fff;
+  font-optical-sizing: auto;
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.navbar-module__6qiM_q__link:hover {
+  color: #60a5fa;
+}
+
+
+/* [project]/src/components/sidebar/sidebar.module.css [app-client] (css) */
+.sidebar-module__4Oz74W__sidebar {
+  color: #fff;
+  background-color: #1a1a2e;
+  height: 100vh;
+  padding: 20px 10px;
+  transition: width .3s;
+  overflow-y: auto;
+}
+
+.sidebar-module__4Oz74W__sidebarTitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar-module__4Oz74W__navList {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__navLink {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__navLinkActive {
+  color: #0eb6ad;
+  background-color: #fff;
+}
+
+.sidebar-module__4Oz74W__subLinks {
+  padding-left: 10px;
+}
+
+.sidebar-module__4Oz74W__subLink {
+  color: #fff;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+}
+
+.sidebar-module__4Oz74W__subLinkActive {
+  color: #0eb6ad;
+}
+
+
+/* [project]/src/app/admin/dashboard/layout.module.css [app-client] (css) */
+.layout-module__UmLHDG__dashboardContainer {
+  background-color: #f0f8ff;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+.layout-module__UmLHDG__dashboardContent {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.layout-module__UmLHDG__mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+/*# sourceMappingURL=src_80c4f01a._.css.map*/

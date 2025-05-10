@@ -1,6 +1,6 @@
 /* [project]/src/app/globals.css [app-client] (css) */
 :root {
-  --background: #fff;
+  --background: #410606;
   --foreground: #171717;
 }
 
@@ -13,7 +13,6 @@
 
 html, body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {

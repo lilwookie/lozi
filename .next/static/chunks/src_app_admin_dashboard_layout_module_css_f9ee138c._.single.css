@@ -1,0 +1,21 @@
+/* [project]/src/app/admin/dashboard/layout.module.css [app-client] (css) */
+.layout-module__UmLHDG__dashboardContainer {
+  background-color: #f0f8ff;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+.layout-module__UmLHDG__dashboardContent {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.layout-module__UmLHDG__mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=src_app_admin_dashboard_layout_module_css_f9ee138c._.single.css.map*/

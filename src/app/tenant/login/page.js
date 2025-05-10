@@ -2,20 +2,21 @@
 'use client'; 
 import React from 'react';
 import styles from './login.module.css'
-import LoginForm from '../../../components/loginForm';
+import LoginForm from '../../../components/loginform/loginForm';
+import Nav from '../../../components/navbar/navbar';
 
-const AdminLoginPage = () => {
-  const handleAdminLogin = ({ email, password }) => {
+const TenantLoginPage = () => {
+  const handleTenantLogin = ({ email, password }) => {
     // Handle admin login logic here
-    console.log('Admin login data', { email, password });
+    console.log('Tenant login data', { email, password });
   };
 
   return (
     <div>
-      <h1 className={styles.heading}>Admin Login</h1>
-      <LoginForm onSubmit={handleAdminLogin} />
+      <Nav/>
+      <LoginForm onSubmit={handleTenantLogin} title='Tenant Login' />
     </div>
   );
 };
 
-export default AdminLoginPage;
+export default TenantLoginPage;

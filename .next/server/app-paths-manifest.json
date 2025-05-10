@@ -1,4 +1,7 @@
 {
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/admin/dashboard/units/add/page": "app/admin/dashboard/units/add/page.js",
+  "/admin/dashboard/units/view/page": "app/admin/dashboard/units/view/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/tenant/login/page": "app/tenant/login/page.js"
+  "/tenant/dashboard/page": "app/tenant/dashboard/page.js"
 }

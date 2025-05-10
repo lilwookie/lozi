@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/vick/Documents/Projects/lozi/src/app/admin/dashboard/page.js"],"sourcesContent":["\n'use client';\nimport React from 'react';\n\nconst DashboardHome = () => {\n  return (\n    <div>\n      <h1>Welcome to the Admin Dashboard</h1>\n      <p>Select an option from the sidebar to get started.</p>\n    </div>\n  );\n};\n\nexport default DashboardHome;\n"],"names":[],"mappings":";;;;AAEA;AADA;;;AAGA,MAAM,gBAAgB;IACpB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGT;uCAEe","debugId":null}}]
+}

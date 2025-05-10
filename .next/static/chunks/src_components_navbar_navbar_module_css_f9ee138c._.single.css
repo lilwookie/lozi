@@ -1,0 +1,42 @@
+/* [project]/src/components/navbar/navbar.module.css [app-client] (css) */
+.navbar-module__6qiM_q__nav {
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6.5rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-module__6qiM_q__logo {
+  color: #fff;
+  font-optical-sizing: auto;
+  font-family: Maven Pro, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.navbar-module__6qiM_q__links {
+  gap: 1.5rem;
+  display: flex;
+}
+
+.navbar-module__6qiM_q__link {
+  color: #fff;
+  font-optical-sizing: auto;
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.navbar-module__6qiM_q__link:hover {
+  color: #60a5fa;
+}
+
+/*# sourceMappingURL=src_components_navbar_navbar_module_css_f9ee138c._.single.css.map*/
