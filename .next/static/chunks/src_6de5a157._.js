@@ -221,13 +221,27 @@ const SideNav = ({ userType = 'admin' })=>{
                     marginBottom: '30px'
                 },
                 children: [
-                    !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sidebarTitle,
-                        children: userType === 'admin' ? 'Admin' : 'Tenant'
+                    !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '10px'
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sidebarTitle,
+                            style: {
+                                margin: 0
+                            },
+                            children: userType === 'admin' ? 'Admin' : 'Tenant'
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/sidebar/sidebar.jsx",
+                            lineNumber: 62,
+                            columnNumber: 7
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                        lineNumber: 60,
-                        columnNumber: 24
+                        lineNumber: 61,
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: toggleCollapse,
@@ -236,27 +250,36 @@ const SideNav = ({ userType = 'admin' })=>{
                             border: 'none',
                             color: 'white',
                             fontSize: '20px',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: 0
                         },
                         children: collapsed ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaBars"], {}, void 0, false, {
                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                            lineNumber: 62,
-                            columnNumber: 24
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaTimes"], {}, void 0, false, {
+                            lineNumber: 79,
+                            columnNumber: 18
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaTimes"], {
+                            style: {
+                                position: 'relative',
+                                top: '1px'
+                            }
+                        }, void 0, false, {
                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                            lineNumber: 62,
-                            columnNumber: 37
+                            lineNumber: 79,
+                            columnNumber: 31
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                        lineNumber: 61,
-                        columnNumber: 9
+                        lineNumber: 65,
+                        columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sidebar/sidebar.jsx",
                 lineNumber: 59,
-                columnNumber: 7
+                columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navList,
@@ -274,7 +297,7 @@ const SideNav = ({ userType = 'admin' })=>{
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaHome"], {}, void 0, false, {
                                         fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -282,24 +305,48 @@ const SideNav = ({ userType = 'admin' })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                lineNumber: 70,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                            lineNumber: 69,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                        lineNumber: 68,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     links.map((link, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
+                                !link.submenu ? // Simple top-level link (like Tenants, Payments, Dashboard, etc.)
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: link.path,
+                                    className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navLink} ${isActive(link.path) ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navLinkActive : ''}`,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        style: {
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '10px'
+                                        },
+                                        children: [
+                                            link.icon,
+                                            !collapsed && link.name
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/sidebar/sidebar.jsx",
+                                        lineNumber: 101,
+                                        columnNumber: 21
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/sidebar/sidebar.jsx",
+                                    lineNumber: 97,
+                                    columnNumber: 19
+                                }, this) : // Dropdown parent link
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navLink} ${isActive(link.path) ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navLinkActive : ''}`,
-                                    onClick: ()=>link.submenu ? toggleDropdown(link.name) : null,
+                                    onClick: ()=>toggleDropdown(link.name),
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             style: {
@@ -313,23 +360,23 @@ const SideNav = ({ userType = 'admin' })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                            lineNumber: 83,
-                                            columnNumber: 15
+                                            lineNumber: 112,
+                                            columnNumber: 21
                                         }, this),
-                                        !collapsed && link.submenu && (openDropdown === link.name ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronUp"], {}, void 0, false, {
+                                        !collapsed && (openDropdown === link.name ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronUp"], {}, void 0, false, {
                                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                            lineNumber: 88,
-                                            columnNumber: 46
+                                            lineNumber: 117,
+                                            columnNumber: 52
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaChevronDown"], {}, void 0, false, {
                                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                            lineNumber: 88,
-                                            columnNumber: 64
+                                            lineNumber: 117,
+                                            columnNumber: 70
                                         }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                    lineNumber: 79,
-                                    columnNumber: 13
+                                    lineNumber: 108,
+                                    columnNumber: 19
                                 }, this),
                                 link.submenu && openDropdown === link.name && !collapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sidebar$2f$sidebar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].subLinks,
@@ -343,24 +390,24 @@ const SideNav = ({ userType = 'admin' })=>{
                                             ]
                                         }, i, true, {
                                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                            lineNumber: 95,
-                                            columnNumber: 19
+                                            lineNumber: 126,
+                                            columnNumber: 23
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                                    lineNumber: 93,
-                                    columnNumber: 15
+                                    lineNumber: 124,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, idx, true, {
                             fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                            lineNumber: 78,
-                            columnNumber: 11
+                            lineNumber: 94,
+                            columnNumber: 15
                         }, this))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sidebar/sidebar.jsx",
-                lineNumber: 66,
+                lineNumber: 83,
                 columnNumber: 7
             }, this)
         ]

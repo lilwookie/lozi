@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import {
   FaUsers,
   FaDoorOpen,
+  FaDoorClosed,
   FaChevronDown,
   FaChevronUp,
   FaPlus,
@@ -12,7 +13,10 @@ import {
   FaHome,
   FaMoneyBill,
   FaBars,
-  FaTimes
+  FaTimes,
+  FaCog,
+  FaUser,
+  FaBullhorn
 } from 'react-icons/fa';
 import styles from './sidebar.module.css'; // ✅ CSS MODULE IMPORT
 
@@ -42,26 +46,46 @@ const SideNav = ({ userType = 'admin' }) => {
       ]
     },
     {
-      name: 'Tenants', path: '/admin/dashboard/tenants',icon: <FaUsers />
+      name: 'Tenants', path: '/admin/dashboard/tenants',icon: <FaUsers/>
     }, 
-    { name: 'Payments', path: '/admin/dashboard/payments', icon: <FaMoneyBill /> }
+    { name: 'Payments', path: '/admin/dashboard/payments', icon: <FaMoneyBill/> }
   ];
 
   const tenantLinks = [
-    { name: 'My Unit', path: '/tenant/dashboard/unit', icon: <FaHome /> },
-    { name: 'Rent', path: '/tenant/dashboard/payments', icon: <FaMoneyBill /> }
+    { name: 'My Unit', path: '/tenant/dashboard/unit', icon: <FaDoorClosed /> },
+    { name: 'Rent', path: '/tenant/dashboard/payments', icon: <FaMoneyBill /> },
+    { name: 'Notices', path: '/tenant/dashboard/notices', icon: <FaBullhorn /> },
+    { name: 'My Profile', path: '/tenant/dashboard/account', icon: <FaUser/> },
+    { name: 'Settings', path: '/tenant/dashboard/settings', icon: <FaCog/> }
   ];
 
   const links = userType === 'admin' ? adminLinks : tenantLinks;
 
   return (
     <div className={styles.sidebar} style={{ width: collapsed ? '80px' : '240px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
-        {!collapsed && <h2 className={styles.sidebarTitle}>{userType === 'admin' ? 'Admin' : 'Tenant'}</h2>}
-        <button onClick={toggleCollapse} style={{ background: 'none', border: 'none', color: 'white', fontSize: '20px', cursor: 'pointer' }}>
-          {collapsed ? <FaBars /> : <FaTimes />}
-        </button>
-      </div>
+   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
+  {!collapsed && (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <h2 className={styles.sidebarTitle} style={{ margin: 0 }}>{userType === 'admin' ? 'Admin' : 'Tenant'}</h2>
+    </div>
+  )}
+  <button
+    onClick={toggleCollapse}
+    style={{
+      background: 'none',
+      border: 'none',
+      color: 'white',
+      fontSize: '20px',
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 0
+    }}
+  >
+    {collapsed ? <FaBars /> : <FaTimes style={{ position: 'relative', top: '1px' }} />}
+  </button>
+</div>
 
       <div className={styles.navList}>
         {/* Dashboard Link */}
@@ -73,37 +97,52 @@ const SideNav = ({ userType = 'admin' }) => {
           </div>
         </Link>
 
-        {/* Other Links */}
         {links.map((link, idx) => (
-          <div key={idx}>
-            <div
-              className={`${styles.navLink} ${isActive(link.path) ? styles.navLinkActive : ''}`}
-              onClick={() => link.submenu ? toggleDropdown(link.name) : null}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                {link.icon}
-                {!collapsed && link.name}
-              </div>
-              {!collapsed && link.submenu && (
-                openDropdown === link.name ? <FaChevronUp /> : <FaChevronDown />
-              )}
-            </div>
-
-            {link.submenu && openDropdown === link.name && !collapsed && (
-              <div className={styles.subLinks}>
-                {link.submenu.map((sublink, i) => (
+              <div key={idx}>
+                {!link.submenu ? (
+                  // Simple top-level link (like Tenants, Payments, Dashboard, etc.)
                   <Link
-                    key={i}
-                    href={sublink.path}
-                    className={`${styles.subLink} ${isActive(sublink.path) ? styles.subLinkActive : ''}`}
+                    href={link.path}
+                    className={`${styles.navLink} ${isActive(link.path) ? styles.navLinkActive : ''}`}
                   >
-                    {sublink.icon} {sublink.name}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      {link.icon}
+                      {!collapsed && link.name}
+                    </div>
                   </Link>
-                ))}
+                ) : (
+                  // Dropdown parent link
+                  <div
+                    className={`${styles.navLink} ${isActive(link.path) ? styles.navLinkActive : ''}`}
+                    onClick={() => toggleDropdown(link.name)}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      {link.icon}
+                      {!collapsed && link.name}
+                    </div>
+                    {!collapsed && (
+                      openDropdown === link.name ? <FaChevronUp /> : <FaChevronDown />
+                    )}
+                  </div>
+                )}
+
+                {/* Submenu items */}
+                {link.submenu && openDropdown === link.name && !collapsed && (
+                  <div className={styles.subLinks}>
+                    {link.submenu.map((sublink, i) => (
+                      <Link
+                        key={i}
+                        href={sublink.path}
+                        className={`${styles.subLink} ${isActive(sublink.path) ? styles.subLinkActive : ''}`}
+                      >
+                        {sublink.icon} {sublink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        ))}
+            ))}
+
       </div>
     </div>
   );

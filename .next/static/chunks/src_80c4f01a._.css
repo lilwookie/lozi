@@ -87,6 +87,7 @@
   color: #fff;
   align-items: center;
   gap: 8px;
+  margin-left: 30px;
   padding: 6px 0;
   font-size: 14px;
   text-decoration: none;
@@ -95,6 +96,9 @@
 
 .sidebar-module__4Oz74W__subLinkActive {
   color: #0eb6ad;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 

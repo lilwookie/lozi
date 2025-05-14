@@ -1,7 +1,10 @@
 {
-  "/admin/dashboard/page": "app/admin/dashboard/page.js",
-  "/admin/dashboard/units/add/page": "app/admin/dashboard/units/add/page.js",
-  "/admin/dashboard/units/view/page": "app/admin/dashboard/units/view/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/tenant/dashboard/page": "app/tenant/dashboard/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/tenant/dashboard/account/page": "app/tenant/dashboard/account/page.js",
+  "/tenant/dashboard/notices/page": "app/tenant/dashboard/notices/page.js",
+  "/tenant/dashboard/page": "app/tenant/dashboard/page.js",
+  "/tenant/dashboard/payments/page": "app/tenant/dashboard/payments/page.js",
+  "/tenant/dashboard/settings/page": "app/tenant/dashboard/settings/page.js",
+  "/tenant/dashboard/unit/page": "app/tenant/dashboard/unit/page.js"
 }
