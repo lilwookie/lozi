@@ -1,0 +1,45 @@
+/* StatCard.css */
+.statcard {
+    display: flex;
+  
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statcardicon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .statcardinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .statcardtitle{
+    font-size: 16px;
+    color: #555;
+    font-family: 'Tilt Neon', sans-serif;
+    margin: 0;
+  }
+  
+  .statcardvalue {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #07a883;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .statcarddesc{
+    font-size: 14px;
+    font-family: 'Tilt Neon', sans-serif;
+    margin: 0;
+    color: #052560;
+  
+  }
+  

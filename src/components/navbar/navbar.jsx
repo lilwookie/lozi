@@ -1,16 +1,35 @@
 'use client';
 
-import styles from './navbar.module.css';
+import { useState } from 'react'; // ✅ required!
+import { usePathname } from 'next/navigation';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
+import styles from './navbar.module.css';
+
 
 export default function NavBar() {
+  const [collapsed, setCollapsed] = useState(true);
+  const pathname = usePathname();
+
+  const toggleCollapse = () => setCollapsed(prev => !prev);
+  const closeMenu = () => setCollapsed(true);
+
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>Tenanz</div>
-      <div className={styles.links}>
-        <Link href="/" className={styles.link}>Home</Link>
-        <Link href="/tenant/login" className={styles.link}>Login</Link>
-        <Link href="/about" className={styles.link}>About</Link>
+      <Link href="/" className={styles.logo}>Tenanz</Link>
+
+      <div className={styles.menuToggle} onClick={toggleCollapse}>
+            {collapsed ? (
+              <FaBars className={styles.menuIcon} />
+            ) : (
+              <FaTimes className={`${styles.menuIcon} ${styles.menuIconClose}`} />
+            )}
+       </div>
+
+      <div className={`${styles.links} ${collapsed ? '' : styles.showMenu}`}>
+        <Link href="/" className={`${styles.link} ${pathname === '/' ? styles.active : ''}`} onClick={closeMenu}>Home</Link>
+        <Link href="/tenant/login" className={`${styles.link} ${pathname === '/tenant/login' ? styles.active : ''}`} onClick={closeMenu}>Login</Link>
+        <Link href="/about" className={`${styles.link} ${pathname === '/about' ? styles.active : ''}`} onClick={closeMenu}>About</Link>
       </div>
     </nav>
   );

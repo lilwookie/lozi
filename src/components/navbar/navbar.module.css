@@ -1,15 +1,17 @@
+/* --- Base Navbar Styling --- */
 .nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 6.5rem;
-    background-color: transparent; /* removed background */
-    backdrop-filter: blur(6px); /* optional: adds glassy feel */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6.5rem;
+  background-color: transparent;
+  backdrop-filter: blur(6px);
 }
 
+/* --- Logo --- */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -17,14 +19,10 @@
   font-family: "Maven Pro", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
+  text-decoration: none;
 }
 
-.links {
-  display: flex;
-  gap: 1.5rem;
-}
-
+/* --- Link Styling (Shared) --- */
 .link {
   color: white;
   text-decoration: none;
@@ -37,5 +35,84 @@
 }
 
 .link:hover {
-  color: #60a5fa; /* light blue */
+  color: #60a5fa;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+/* --- Desktop Layout --- */
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* --- Responsive Mobile Styles --- */
+.menuToggle {
+  display: block;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+/* Fullscreen overlay nav for mobile */
+@media (max-width: 767px) {
+  .links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(17, 17, 17, 0.95); /* semi-transparent for backdrop effect */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .showMenu {
+    height: 100vh;
+  }
+.menuIcon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.menuIconClose {
+  position: relative;
+  top: 1px;
+}
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 768px) {
+  .menuToggle {
+    display: none;
+  }
+
+  .links {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
 }
