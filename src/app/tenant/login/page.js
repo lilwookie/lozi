@@ -23,10 +23,6 @@ const TenantLoginPage = () => {
       localStorage.setItem('token', token);
       localStorage.setItem('user', JSON.stringify(tenant));
 
-
-          /* To store only tone and extract all other user details from it! */
-
-          
       // Redirect to tenant dashboard
       router.push('/tenant/dashboard');
     } catch (err) {
