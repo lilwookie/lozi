@@ -32,7 +32,7 @@ const TenantLoginPage = () => {
   };
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Nav/>
       <LoginForm onSubmit={handleTenantLogin} title='Tenant Login' />
     </div>

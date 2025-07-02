@@ -1,0 +1,32 @@
+.iconGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  padding: 0.5rem 0;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.iconItem:hover {
+  transform: scale(1.1);
+  color: #771111;
+}
+
+.icon {
+  font-size: 1rem;
+  color: #28383D;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #28383D;
+  text-align: center;
+}

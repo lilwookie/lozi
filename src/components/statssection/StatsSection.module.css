@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #771111;
+}
+
+.value {
+  font-family: var(--font-radio);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 0.4rem;
+  color: #771111;
+}
+
+.label {
+  font-size: 1rem;
+  color: #771111;
+  white-space: nowrap;
+  font-family: var(--font-radio);
+}
+
+.divider {
+  font-size: 1.4rem;
+  color: #ccc;
+}

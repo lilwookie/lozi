@@ -1,8 +1,9 @@
-body{
-
-    background-color: aqua;
-    font-family: 'Courier New', Courier, monospace;
+.wrapper {
+  min-height: 100vh;
+  background-color: rgb(255, 175, 2);
+  font-family: 'Courier New', Courier, monospace;
 }
+
 
 .heading{
     color:chartreuse;

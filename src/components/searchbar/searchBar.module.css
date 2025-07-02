@@ -1,0 +1,32 @@
+.searchContainer {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  max-width: 800px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 3rem 0.75rem 1.25rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #a3a3a3; /* Light grey input text */
+  border-radius: 9999px;
+  background-color: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.input::placeholder {
+  color: #d4d4d4; /* Even lighter placeholder */
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: #b0b0b0;
+  pointer-events: none;
+}

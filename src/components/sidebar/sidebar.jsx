@@ -37,6 +37,9 @@ const SideNav = ({ userType = 'admin' }) => {
   const isActive = (path) => pathname === path;
 
   const adminLinks = [
+      {
+      name: 'Properties', path: '/admin/dashboard/properties',icon: <FaUsers/>
+    }, 
     {
       name: 'Units',
       icon: <FaDoorOpen />,

@@ -1,5 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Radio_Canada_Big, Quicksand  } from "next/font/google";
 import "./globals.css";
+
+
+const radioCanada = Radio_Canada_Big({
+  subsets: ['latin'],
+  weight: ['500', '700'],
+  variable: '--font-radio'
+});
+
+const quicksand = Quicksand({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-quicksand',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${radioCanada.variable} ${geistSans.variable} ${geistMono.variable} ${quicksand.variable}`}>
         {children}
       </body>
     </html>

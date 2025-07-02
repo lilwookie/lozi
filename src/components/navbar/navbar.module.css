@@ -8,7 +8,7 @@
   align-items: center;
   padding: 1rem 6.5rem;
   background-color: transparent;
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
 }
 
 /* --- Logo --- */
@@ -31,7 +31,7 @@
   font-family: "Maven Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  font-family: var(--font-quicksand);
 }
 
 .link:hover {
