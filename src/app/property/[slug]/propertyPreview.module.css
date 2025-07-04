@@ -1,0 +1,6 @@
+.previewWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Adds vertical space between children */
+  padding: 0 1rem;
+}

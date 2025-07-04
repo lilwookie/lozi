@@ -1,0 +1,113 @@
+.heroContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+    background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.leftContent {
+  flex: 2;
+}
+
+.featuredImage {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbWrapper {
+  position: relative;
+  height: 60px;
+  width: 90px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.thumbImg {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.infoBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.rightMap {
+  flex: 1;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 24px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.navArrow.right {
+  right: 10px;
+}
+
+.navArrow:not(.right) {
+  left: 10px;
+}
+
+.thumbWrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.thumbWrapper.active {
+  border: 2px solid #0070f3;
+}

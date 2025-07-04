@@ -1,0 +1,52 @@
+.overviewContainer {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 100%;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #28383D;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #07b83c;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.6rem;
+  color: #28383D;
+}
+
+.icon {
+  color: #222;
+  font-size: 1rem;
+}
+
+.message {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Adds a vertical thread line */
+.withLine::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  width: 1px;
+  height: calc(100% + 2rem);
+  background-color: #aaa;
+}

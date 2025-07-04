@@ -63,7 +63,7 @@ export default function StepUnitVariants({ formData, setFormData }) {
       {Array.isArray(formData.unit_variants) && formData.unit_variants.length > 0 && (
         <div className={styles.formGroup}>
           <label>Added Units:</label>
-          <ul style={{ paddingLeft: '1.2rem', marginTop: '0.4rem' }}>
+          <ul style={{ paddingLeft: '1.2rem', marginTop: '0.4rem' , color:'#000000'}}>
             {formData.unit_variants.map((id) => {
               const variant = variants.find((v) => v.id === id);
               return (
